@@ -1,101 +1,156 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
+/*
+ * @Author: qinjinyuan
+ * @Date: 2025-03-06 11:10:49
+ * @LastEditTime: 2025-03-12 15:57:19
+ * @FilePath: \my-app-one\src\app\page.tsx
+ */
+'use client'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div>
+      <div className="w-screen h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30">
+        <img
+          src="https://picsum.photos/seed/picsum/1900/850"
+          className="absolute top-0 left-0 min-h-full ob"
+          alt=""
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="relative z-20 max-w-screen-lg mx-auto grid grid-cols-12 h-full items-center">
+          <div className="col-span-6">
+            <span className="uppercase text-white text-xs font-bold mb-2 block">
+              WE ARE EXPERTS
+            </span>
+            <h1 className="text-white font-extrabold text-5xl mb-8">
+              Finpoint provides Financial Consulting in different ways
+            </h1>
+            <p className="text-stone-100 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button className="mt-8 text-white uppercase py-4 text-base font-light px-10 border border-white hover:bg-white hover:bg-opacity-10">
+              Get started
+            </button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="bg-[#f7d0b6] py-20">
+        <div className="max-w-screen-lg mx-auto flex justify-between items-center">
+          <div className="max-w-xl">
+            <h2 className="font-black text-sky-950 text-3xl mb-4">
+              As the leading experts in this field, we&apos;re in over 90 countries
+            </h2>
+            <p className="text-base text-sky-950">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <button className="text-sky-950 uppercase py-3 text-base px-10 border border-sky-950 hover:bg-sky-950 hover:bg-opacity-10">
+            Get started
+          </button>
+        </div>
+      </div>
+      <div className="py-12 relative overflow-hidden bg-white">
+        <div className="grid grid-cols-2 max-w-screen-lg mx-auto">
+          <div className="w-full flex flex-col items-end pr-16">
+            <h2 className="text-[#64618C] font-bold text-2xl max-w-xs text-right mb-12 mt-10">
+              Whether you need Assistance
+            </h2>
+            <div className="h-full mt-auto overflow-hidden relative">
+              <img
+                width={100}
+                src="https://picsum.photos/800/600"
+                className="h-full w-full object-contain"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div className="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-sky-950 before:top-0 before:left-0">
+            <div className="relative z-20 pl-12">
+              <h2 className="text-[#f7d0b6] font-black text-5xl leading-snug mb-10">
+                Finpoint is here <br />
+                to help you
+              </h2>
+              <p className="text-white text-sm">
+                Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus
+                molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam in arcu
+                cursus euismod quis viverra nibh cras pulvinar.
+              </p>
+              <button className="mt-8 text-white uppercase py-3 text-sm px-10 border border-white hover:bg-white hover:bg-opacity-10">
+                Talk with expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="py-4 relative overflow-hidden bg-white">
+        <div className="grid grid-cols-2 max-w-screen-lg mx-auto">
+          <div className="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-[#f7d0b6] before:top-0 before:right-0">
+            <div className="relative z-20 pl-12">
+              <h2 className="text-sky-950 font-black text-5xl leading-snug mb-10">
+                Finpoint is here <br />
+                to help you
+              </h2>
+              <p className="text-sky-950 text-sm">
+                Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus
+                molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam in arcu
+                cursus euismod quis viverra nibh cras pulvinar.
+              </p>
+              <button className="mt-8 text-sky-950 uppercase py-3 text-sm px-10 border border-sky-950 hover:bg-white hover:bg-opacity-10">
+                Talk with expert
+              </button>
+            </div>
+          </div>
+          <div className="w-full flex flex-col pl-16">
+            <h2 className="text-[#64618C] font-bold text-2xl max-w-xs text-left mb-12 mt-10">
+              Whether you need Assistance
+            </h2>
+            <div className="h-full mt-auto overflow-hidden relative">
+              <img
+                width={100}
+                src="https://picsum.photos/800/600"
+                className="h-full w-full object-contain"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="py-12 relative overflow-hidden bg-white">
+        <div className="grid grid-cols-2 max-w-screen-lg mx-auto">
+          <div className="w-full flex flex-col items-end pr-16">
+            <h2 className="text-[#64618C] font-bold text-2xl max-w-xs text-right mb-12 mt-10">
+              Whether you need Assistance
+            </h2>
+            <div className="h-full mt-auto overflow-hidden relative">
+              <img
+                width={100}
+                src="https://picsum.photos/800/600"
+                className="h-full w-full object-contain"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div className="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-sky-950 before:top-0 before:left-0">
+            <div className="relative z-20 pl-12">
+              <h2 className="text-[#f7d0b6] font-black text-5xl leading-snug mb-10">
+                Finpoint is here <br />
+                to help you
+              </h2>
+              <p className="text-white text-sm">
+                Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus
+                molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam in arcu
+                cursus euismod quis viverra nibh cras pulvinar.
+              </p>
+              <button className="mt-8 text-white uppercase py-3 text-sm px-10 border border-white hover:bg-white hover:bg-opacity-10">
+                Talk with expert
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
