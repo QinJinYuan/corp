@@ -1,17 +1,13 @@
 /*
  * @Author: qinjinyuan
  * @Date: 2025-03-06 11:10:49
- * @LastEditTime: 2025-03-12 16:19:42
+ * @LastEditTime: 2025-03-12 16:34:21
  * @FilePath: \my-app-one\src\app\layout.tsx
  */
-import './globals.css';
+import './globals.css'
 
-import type { Metadata } from 'next';
-import {
-  Abhaya_Libre,
-  Geist,
-  Geist_Mono,
-} from 'next/font/google';
+import type { Metadata } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -40,7 +36,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="flex">{children}</div>
-        <div >1231312313123</div>
+        <div>1231312313123</div>
       </body>
     </html>
   )
