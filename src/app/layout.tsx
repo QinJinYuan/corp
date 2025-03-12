@@ -1,7 +1,7 @@
 /*
  * @Author: qinjinyuan
  * @Date: 2025-03-06 11:10:49
- * @LastEditTime: 2025-03-06 18:00:04
+ * @LastEditTime: 2025-03-12 16:19:42
  * @FilePath: \my-app-one\src\app\layout.tsx
  */
 import './globals.css';
@@ -22,9 +22,9 @@ const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin']
 })
-const abc = Abhaya_Libre({
-  weight: '400'
-})
+// const abc = Abhaya_Libre({
+//   weight: '400'
+// })
 
 export const metadata: Metadata = {
   title: 'HOME',
@@ -40,7 +40,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="flex">{children}</div>
-        <div className={abc.className}>1231312313123</div>
+        <div >1231312313123</div>
       </body>
     </html>
   )
